@@ -1,0 +1,8 @@
+@use "../global" as g;
+
+footer {
+    background-color: var(--color-bg-footer);
+    .container {
+        width: calc(100% - 60px);
+    }
+}

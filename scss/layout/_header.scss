@@ -1,0 +1,23 @@
+@use "../global" as g;
+
+header {
+    background-color: var(--color-bg-header-fixed);
+    .container {
+        width: calc(100% - 60px);
+    }
+}
+.header_logo {
+    color: var(--color-head);
+    
+}
+.global_nav {
+    list-style: none;
+}
+.global_nav li {
+    display: inline-block;
+}
+.global_nav li a {
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--color-head);
+}
