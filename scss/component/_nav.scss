@@ -1,0 +1,15 @@
+@use "../global" as g;
+
+.c-nav {
+    list-style: none;
+}
+.c-nav li {
+    display: inline-block;
+}
+.c-nav li a {
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--color-head);
+    font-family: var(--font-family-head);
+    font-weight: bold;
+}

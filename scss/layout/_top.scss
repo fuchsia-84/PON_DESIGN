@@ -1,6 +1,7 @@
 @use "../global" as g;
 
 .top {
+    font-family: var(--font-family-head);
     color: var(--color-head);
     text-align: center;
     background-color: var(--color-bg-footer);

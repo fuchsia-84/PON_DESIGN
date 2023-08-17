@@ -208,13 +208,6 @@ progress {
   cursor: default;
 }
 
-.c-text {
-  background-color: #eee;
-}
-.c-text span {
-  background-color: #ff0000;
-}
-
 :root {
   --color-head: #FFFFFF;
   --color-section: #333333;
@@ -235,41 +228,90 @@ progress {
   margin: 0 auto;
 }
 
+:root {
+  --font-family-head: "Montserrat", sans-serif;
+  --font-family-base: "hiragino-kaku-gothic-pron", sans-serif;
+}
+
+html {
+  font-size: 18px;
+  line-height: 1rem;
+  letter-spacing: 0.05em;
+}
+
+body {
+  font-family: var(--font-family-base);
+}
+
+.c-text {
+  background-color: #eee;
+}
+.c-text span {
+  background-color: #ff0000;
+}
+
 .c-button {
   color: var(--color-head);
   text-decoration: none;
 }
 
+/*
 .c-toggle {
-  display: none;
+    display: none;
+}
+*/
+.c-nav {
+  list-style: none;
+}
+
+.c-nav li {
+  display: inline-block;
+}
+
+.c-nav li a {
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--color-head);
+  font-family: var(--font-family-head);
+  font-weight: bold;
 }
 
 header {
   background-color: var(--color-bg-header-fixed);
+  font-family: var(--font-family-head);
 }
 header .container {
   width: calc(100% - 60px);
+  display: flex;
+  justify-content: space-between;
+}
+header .c-toggle {
+  display: none;
+}
+header .c-nav {
+  font-size: 0.77rem;
+  line-height: 1.07em;
+  padding: 34px 0;
+}
+header .c-nav li {
+  margin-right: 25px;
+}
+header .c-nav li:last-of-type {
+  margin-right: 0;
 }
 
 .header_logo {
   color: var(--color-head);
-}
-
-.global_nav {
-  list-style: none;
-}
-
-.global_nav li {
-  display: inline-block;
-}
-
-.global_nav li a {
-  cursor: pointer;
-  text-decoration: none;
-  color: var(--color-head);
+  /*To Do: fix using SVG.*/
+  font-size: 17.38px;
+  line-height: 1em;
+  letter-spacing: 0.018em;
+  font-weight: bold;
+  margin-top: 34px;
 }
 
 .top {
+  font-family: var(--font-family-head);
   color: var(--color-head);
   text-align: center;
   background-color: var(--color-bg-footer);
@@ -280,9 +322,21 @@ header .container {
 
 footer {
   background-color: var(--color-bg-footer);
+  text-align: center;
 }
 footer .container {
   width: calc(100% - 60px);
+}
+footer .c-nav {
+  font-size: 0.77rem;
+  line-height: 1.07em;
+  letter-spacing: 0;
+}
+footer .c-nav li {
+  margin-right: 20px;
+}
+footer .c-nav li:last-of-type {
+  margin-right: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

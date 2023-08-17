@@ -2,7 +2,19 @@
 
 footer {
     background-color: var(--color-bg-footer);
+    text-align: center;
     .container {
         width: calc(100% - 60px);
+    }
+    .c-nav {
+        font-size: 0.77rem;
+        line-height: 1.07em;
+        letter-spacing: 0;
+    }
+    .c-nav li {
+        margin-right: 20px;
+    }
+    .c-nav li:last-of-type {
+        margin-right: 0;
     }
 }

@@ -2,22 +2,33 @@
 
 header {
     background-color: var(--color-bg-header-fixed);
+    font-family: var(--font-family-head);
     .container {
         width: calc(100% - 60px);
+        display: flex;
+        justify-content: space-between;
+    }
+    .c-toggle {
+        display: none;
+    }
+    .c-nav {
+        font-size: 0.77rem;
+        line-height: 1.07em;
+        padding: 34px 0;
+    }
+    .c-nav li {
+        margin-right: 25px;
+    }
+    .c-nav li:last-of-type {
+        margin-right: 0;
     }
 }
 .header_logo {
     color: var(--color-head);
-    
-}
-.global_nav {
-    list-style: none;
-}
-.global_nav li {
-    display: inline-block;
-}
-.global_nav li a {
-    cursor: pointer;
-    text-decoration: none;
-    color: var(--color-head);
+    /*To Do: fix using SVG.*/
+    font-size: 17.38px;
+    line-height: 1.0em;
+    letter-spacing: 0.018em;
+    font-weight: bold;
+    margin-top: 34px;
 }
