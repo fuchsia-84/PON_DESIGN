@@ -247,13 +247,6 @@ body {
   display: none;
 }
 
-.c-text {
-  background-color: #eee;
-}
-.c-text span {
-  background-color: #ff0000;
-}
-
 .c-button {
   padding: 18px 70px;
   color: var(--color-head);
