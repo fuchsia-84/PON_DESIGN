@@ -243,6 +243,10 @@ body {
   font-family: var(--font-family-base);
 }
 
+.br_sp {
+  display: none;
+}
+
 .c-text {
   background-color: #eee;
 }
@@ -251,8 +255,11 @@ body {
 }
 
 .c-button {
+  padding: 18px 70px;
   color: var(--color-head);
   text-decoration: none;
+  text-align: center;
+  border-radius: 100px;
 }
 
 /*
@@ -276,9 +283,16 @@ body {
   font-weight: bold;
 }
 
+.c-scroll {
+  /*To Do: fix scroll icon*/
+  display: none;
+}
+
 header {
-  background-color: var(--color-bg-header-fixed);
+  width: 100%;
+  background-color: transparent;
   font-family: var(--font-family-head);
+  position: fixed;
 }
 header .container {
   width: calc(100% - 60px);
@@ -300,6 +314,7 @@ header .c-nav li:last-of-type {
   margin-right: 0;
 }
 
+/*To Do: add fixed style*/
 .header_logo {
   color: var(--color-head);
   /*To Do: fix using SVG.*/
@@ -311,6 +326,11 @@ header .c-nav li:last-of-type {
 }
 
 .top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
   font-family: var(--font-family-head);
   color: var(--color-head);
   text-align: center;
@@ -318,6 +338,24 @@ header .c-nav li:last-of-type {
 }
 .top .container {
   width: 100%;
+}
+.top h1 {
+  font-size: 4rem;
+  line-height: 5rem;
+  letter-spacing: 0.05em;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.top p {
+  font-family: var(--font-family-base);
+  font-size: 1.33rem;
+  line-height: 2.1rem;
+  letter-spacing: 1em;
+  margin-bottom: 47px;
+}
+.top .c-button {
+  border: 1px solid var(--color-head);
+  background-color: transparent;
 }
 
 footer {

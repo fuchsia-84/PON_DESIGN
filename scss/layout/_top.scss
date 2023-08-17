@@ -1,11 +1,34 @@
 @use "../global" as g;
 
 .top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
     font-family: var(--font-family-head);
     color: var(--color-head);
     text-align: center;
     background-color: var(--color-bg-footer);
     .container {
         width: 100%;
+    }
+    h1 {
+        font-size: 4.0rem;
+        line-height: 5.0rem;
+        letter-spacing: 0.05em;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+    p {
+        font-family: var(--font-family-base);
+        font-size: 1.33rem;
+        line-height: 2.1rem;
+        letter-spacing: 1.0em;
+        margin-bottom: 47px;
+    }
+    .c-button {
+        border: 1px solid var(--color-head);
+        background-color: transparent;
     }
 }
