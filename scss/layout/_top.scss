@@ -1,0 +1,10 @@
+@use "../global" as g;
+
+.top {
+    color: var(--color-head);
+    text-align: center;
+    background-color: var(--color-bg-footer);
+    .container {
+        width: 100%;
+    }
+}

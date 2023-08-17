@@ -235,6 +235,15 @@ progress {
   margin: 0 auto;
 }
 
+.c-button {
+  color: var(--color-head);
+  text-decoration: none;
+}
+
+.c-toggle {
+  display: none;
+}
+
 header {
   background-color: var(--color-bg-header-fixed);
 }
@@ -258,6 +267,15 @@ header .container {
   cursor: pointer;
   text-decoration: none;
   color: var(--color-head);
+}
+
+.top {
+  color: var(--color-head);
+  text-align: center;
+  background-color: var(--color-bg-footer);
+}
+.top .container {
+  width: 100%;
 }
 
 footer {
