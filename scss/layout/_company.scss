@@ -1,0 +1,33 @@
+@use "../global" as g;
+
+.company {
+    background-color: var(--color-bg-section);
+    text-align: center;
+    .c-button {
+        position: absolute;
+        z-index: 2;
+        bottom: 79px;
+        left: calc(50% - 100px);
+    }
+    .container {
+        width: calc(100% - 140px);
+        margin: 0 auto;
+        position: relative;
+    }
+    .wrapper {
+        width: 80%;
+        padding: 136px 0 139px;
+        margin: 0 auto;
+        background-image: url(../../img/bg-circle.png);
+        background-size: cover;
+        p {
+            font-family: var(--font-family-base);
+            font-size: 0.83rem;
+            line-height: 1.5rem;
+            letter-spacing: 0.05em;
+        }
+    }
+    .c-line-title {
+        margin: 30px auto 40px;
+    }
+}

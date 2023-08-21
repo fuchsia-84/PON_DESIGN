@@ -1,0 +1,15 @@
+@use "../global" as g;
+
+.c-line-title {
+    font-size: 2.22rem;
+    line-height: 0.8em;
+    letter-spacing: 0.05em;
+    font-family: var(--font-family-base);
+    span {
+        display: block;
+        margin: -5px auto;
+        width: 666px;
+        height: 12px;
+        background-color: var(--color-bg-line);
+    }
+}
