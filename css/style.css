@@ -281,6 +281,50 @@ body {
   display: none;
 }
 
+.c-title {
+  font-family: var(--font-family-head);
+  color: var(--color-title);
+  text-align: center;
+}
+.c-title h1 {
+  font-size: 2rem;
+  line-height: 1.78rem;
+  letter-spacing: 0.02em;
+  margin-bottom: 2px;
+}
+.c-title p {
+  font-family: var(--font-family-base);
+  font-size: 0.72rem;
+  line-height: 1.78rem;
+  letter-spacing: 0.05em;
+  margin-left: 5px;
+}
+
+.c-tab {
+  font-family: var(--font-family-head);
+}
+.c-tab dt {
+  font-size: 0.83rem;
+  letter-spacing: 0.1em;
+  font-weight: normal;
+  float: left;
+}
+.c-tab dt span {
+  width: 82px;
+  text-align: center;
+  display: inline-block;
+  font-size: 0.67rem;
+  letter-spacing: 0.05em;
+  font-weight: bold;
+}
+.c-tab dd {
+  font-family: var(--font-family-base);
+  font-size: 0.83rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.05em;
+  font-weight: 300;
+}
+
 header {
   width: 100%;
   background-color: transparent;
@@ -350,6 +394,31 @@ header .c-nav li:last-of-type {
 .top .c-button {
   border: 1px solid var(--color-head);
   background-color: transparent;
+}
+
+.news {
+  background-color: var(--color-bg-section);
+  font-family: var(--font-family-head);
+}
+.news .container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 70px 0;
+}
+.news .wrapper {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+}
+.news .wrapper .c-title {
+  display: inline-block;
+  text-align: left;
+  vertical-align: top;
+  width: 20%;
+}
+.news .wrapper .c-tab {
+  display: inline-block;
+  width: 80%;
 }
 
 footer {

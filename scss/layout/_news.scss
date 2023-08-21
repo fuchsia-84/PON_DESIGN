@@ -1,0 +1,27 @@
+@use "../global" as g;
+
+.news {
+    background-color: var(--color-bg-section);
+    font-family: var(--font-family-head);
+    .container {
+        width: 90%;
+        margin: 0 auto;
+        padding: 70px 0;
+    }
+    .wrapper {
+        display: flex;
+        width: 80%;
+        margin: 0 auto;
+        
+        .c-title {
+            display: inline-block;
+            text-align: left;
+            vertical-align: top;
+            width: 20%;
+        }
+        .c-tab {
+            display: inline-block;
+            width: 80%;
+        }
+    }
+}

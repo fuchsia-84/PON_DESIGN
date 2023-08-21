@@ -1,0 +1,26 @@
+@use "../global" as g;
+
+.c-tab {
+    font-family: var(--font-family-head);
+    dt {
+        font-size: 0.83rem;
+        letter-spacing: 0.1em;
+        font-weight: normal;
+        float: left;
+        span {
+            width: 82px;
+            text-align: center;
+            display: inline-block;
+            font-size: 0.67rem;
+            letter-spacing: 0.05em;
+            font-weight: bold;
+        }
+    }
+    dd {
+        font-family: var(--font-family-base);
+        font-size: 0.83rem;
+        line-height: 1.5rem;
+        letter-spacing: 0.05em;
+        font-weight: 300;
+    }
+}
