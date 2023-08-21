@@ -531,6 +531,39 @@ header .c-nav li:last-of-type {
   margin: 30px auto 40px;
 }
 
+.recruit {
+  background-color: var(--color-bg-section);
+}
+.recruit .container {
+  padding: 70px 0;
+}
+.recruit .wrapper {
+  display: grid;
+  width: 80%;
+  height: 332px;
+  margin: 0 auto;
+  grid-template-columns: 1fr 2fr;
+}
+.recruit .wrapper div {
+  background-color: var(--color-bg-recruit);
+  text-align: center;
+}
+.recruit .wrapper div .c-title {
+  margin-top: 70px;
+}
+.recruit .wrapper div p#recruit-item {
+  font-family: var(--font-family-base);
+  font-size: 0.83rem;
+  line-height: 1.56rem;
+  letter-spacing: 0.05em;
+  margin-bottom: 48px;
+}
+.recruit .wrapper img {
+  width: 100%;
+  height: 332px;
+  object-fit: cover;
+}
+
 footer {
   background-color: var(--color-bg-footer);
   text-align: center;
