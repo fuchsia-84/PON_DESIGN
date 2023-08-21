@@ -1,0 +1,49 @@
+@use "../global" as g;
+
+.works {
+    .container {
+        background-color: var(--color-bg-section);
+        padding: 60px 0 81px;
+        position: relative;
+        .works-bg {
+            display: block;
+            width: 66%;
+            height: 651px;
+            background-color: var(--color-bg-works);
+            position: absolute;
+            top: 0;
+            right: 70px;
+        }
+    }
+    .wrapper {
+        display: grid;
+        width: calc(100% - 140px);
+        margin: 0 auto;
+        grid-template-columns: 2fr 1fr;
+        position: relative;
+        .c-slide {
+            max-width: 750px;
+            align-self: start;
+            img {
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+            }
+        }
+        .c-works-item {
+            background-color: var(--color-bg-works);
+            text-align: center;
+            padding-right: 60px;
+            .c-title {
+                margin-top: 153px;
+            }
+            p#works-item {
+                font-family: var(--font-family-base);
+                font-size: 0.83rem;
+                line-height: 1.5rem;
+                letter-spacing: 0.05em;
+                margin: 30px 0 48px;
+            }
+        }
+    }
+}

@@ -212,7 +212,7 @@ progress {
   --color-head: #FFFFFF;
   --color-section: #333333;
   --color-bg-section: #E8E8E8;
-  --color-bg-work: #F0F0F0;
+  --color-bg-works: #F0F0F0;
   --color-bg-recruit: #F7F7F7;
   --color-bg-contact: #F7F7F7;
   --color-title: #391E88;
@@ -497,6 +497,52 @@ header .c-nav li:last-of-type {
   grid-template-columns: repeat(3, 1fr);
   column-gap: 30px;
   margin: 30px auto;
+}
+
+.works .container {
+  background-color: var(--color-bg-section);
+  padding: 60px 0 81px;
+  position: relative;
+}
+.works .container .works-bg {
+  display: block;
+  width: 66%;
+  height: 651px;
+  background-color: var(--color-bg-works);
+  position: absolute;
+  top: 0;
+  right: 70px;
+}
+.works .wrapper {
+  display: grid;
+  width: calc(100% - 140px);
+  margin: 0 auto;
+  grid-template-columns: 2fr 1fr;
+  position: relative;
+}
+.works .wrapper .c-slide {
+  max-width: 750px;
+  align-self: start;
+}
+.works .wrapper .c-slide img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.works .wrapper .c-works-item {
+  background-color: var(--color-bg-works);
+  text-align: center;
+  padding-right: 60px;
+}
+.works .wrapper .c-works-item .c-title {
+  margin-top: 153px;
+}
+.works .wrapper .c-works-item p#works-item {
+  font-family: var(--font-family-base);
+  font-size: 0.83rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.05em;
+  margin: 30px 0 48px;
 }
 
 .company {
