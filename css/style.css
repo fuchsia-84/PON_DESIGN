@@ -327,7 +327,8 @@ header .c-nav li:last-of-type {
   font-family: var(--font-family-head);
   color: var(--color-head);
   text-align: center;
-  background-color: var(--color-bg-footer);
+  background-image: url(../../img/hero.png);
+  background-size: cover;
 }
 .top .container {
   width: 100%;

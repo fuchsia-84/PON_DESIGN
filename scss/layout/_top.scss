@@ -9,7 +9,8 @@
     font-family: var(--font-family-head);
     color: var(--color-head);
     text-align: center;
-    background-color: var(--color-bg-footer);
+    background-image: url(../../img/hero.png);
+    background-size: cover;
     .container {
         width: 100%;
     }
