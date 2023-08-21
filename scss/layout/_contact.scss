@@ -1,0 +1,19 @@
+@use "../global" as g;
+
+.contact {
+    .container {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        padding: 80px 0;
+    }
+    .wrapper {
+        padding-bottom: 18px;
+        p {
+            font-family: var(--font-family-base);
+            font-size: 0.83rem;
+            line-height: 1.78rem;
+            margin: 30px auto 48px;
+        }
+    }
+}
