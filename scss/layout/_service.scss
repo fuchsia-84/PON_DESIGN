@@ -1,0 +1,16 @@
+@use "../global" as g;
+
+.service {
+    text-align: center;
+    background-color: var(--color-bg-section);
+    .container {
+        padding: 70px 0;
+    }
+    .wrapper {
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 30px;
+        margin: 30px auto;
+    }
+}

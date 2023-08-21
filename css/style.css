@@ -219,6 +219,8 @@ progress {
   --color-bg-line: #F5F534;
   --color-bg-header: transparent;
   --color-bg-header-fixed: #21054D;
+  --color-bg-button-left: #7633A4;
+  --color-bg-button-right: #250D65;
   --color-copyright: #A798B7;
   --color-bg-footer: #120E19;
 }
@@ -253,6 +255,7 @@ body {
   text-decoration: none;
   text-align: center;
   border-radius: 100px;
+  background: linear-gradient(90deg, var(--color-bg-button-left), var(--color-bg-button-right));
 }
 
 /*
@@ -325,6 +328,24 @@ body {
   font-weight: 300;
 }
 
+.c-item img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  margin-bottom: 22px;
+}
+.c-item h1 {
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+.c-item p {
+  text-align: left;
+  font-size: 0.83rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.05em;
+}
+
 header {
   width: 100%;
   background-color: transparent;
@@ -393,6 +414,7 @@ header .c-nav li:last-of-type {
 }
 .top .c-button {
   border: 1px solid var(--color-head);
+  background: none;
   background-color: transparent;
 }
 
@@ -419,6 +441,21 @@ header .c-nav li:last-of-type {
 .news .wrapper .c-tab {
   display: inline-block;
   width: 80%;
+}
+
+.service {
+  text-align: center;
+  background-color: var(--color-bg-section);
+}
+.service .container {
+  padding: 70px 0;
+}
+.service .wrapper {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 30px;
+  margin: 30px auto;
 }
 
 footer {
