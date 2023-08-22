@@ -1,4 +1,40 @@
+@use "../global" as g;
+@use "../foundation/mixin" as m;
+
 .c-scroll {
-    /*To Do: fix scroll icon*/
-    display: none;
+    position: absolute;
+    bottom: 150px;
+    right: 37px;
+    z-index: 700;
+    span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: var(--color-head);
+        font-family: var(--font-family-head);
+        font-size: 0.67rem;
+        line-height: 1.0em;
+        letter-spacing: 0.2em;
+        writing-mode: vertical-rl;
+        z-index: 701;
+    }
+    ::after {
+        content: '';
+        position: absolute;
+        z-index: 702;
+        bottom: -86px;
+        left: 0.5em;
+        width: 1px;
+        height: 80px;
+        background-color: var(--color-head);
+        @include m.animation(
+            $name: pathmove,
+            $duration: 1.4s,
+            $timing-function: ease-in-out,
+            $delay: 0s,
+            $iteration-count: infinite,
+            $direction: normal
+        );
+        opacity: 0;
+    }
 }
