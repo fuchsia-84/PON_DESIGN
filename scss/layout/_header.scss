@@ -1,10 +1,12 @@
 @use "../global" as g;
+@use "../foundation/mixin" as m;
 
 header {
     width: 100%;
     background-color: transparent;
     font-family: var(--font-family-head);
     position: fixed;
+    z-index: 900;
 
     .container {
         width: calc(100% - 60px);
@@ -26,7 +28,23 @@ header {
         margin-right: 0;
     }
 }
-/*To Do: add fixed style*/
+header.fixed {
+    background-color: var(--color-bg-header-fixed);
+    @include m.animation(
+        $name: fadeIn,
+        $duration: 1.5s,
+        $timing-function: ease,
+        $delay: 0s,
+        $iteration-count: 1,
+        $direction: normal,
+    );
+    .c-nav {
+        padding: 27px 0;
+    }
+    .header_logo {
+        margin-top: 27px;
+    }
+}
 
 .header_logo {
     color: var(--color-head);

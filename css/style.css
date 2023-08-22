@@ -245,6 +245,15 @@ body {
   font-family: var(--font-family-base);
 }
 
+/*fadeIn*/
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .br_sp {
   display: none;
 }
@@ -412,6 +421,7 @@ header {
   background-color: transparent;
   font-family: var(--font-family-head);
   position: fixed;
+  z-index: 900;
 }
 header .container {
   width: calc(100% - 60px);
@@ -433,7 +443,23 @@ header .c-nav li:last-of-type {
   margin-right: 0;
 }
 
-/*To Do: add fixed style*/
+header.fixed {
+  background-color: var(--color-bg-header-fixed);
+  animation-name: fadeIn;
+  animation-duration: 1.5s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+header.fixed .c-nav {
+  padding: 27px 0;
+}
+header.fixed .header_logo {
+  margin-top: 27px;
+}
+
 .header_logo {
   color: var(--color-head);
   /*To Do: fix using SVG.*/
