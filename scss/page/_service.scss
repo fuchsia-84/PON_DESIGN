@@ -1,0 +1,37 @@
+@use "../global" as g;
+
+.service-contents {
+    padding: 67px 0 111px;
+    .container {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .service-content {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        margin-bottom: 60px;
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            object-position: center;
+        }
+        div {
+            font-family: var(--font-family-head);
+            letter-spacing: 0.05em;
+            padding-left: 50px;
+            h1 {
+                font-size: 1.33rem;
+                line-height: 1.78rem;
+                margin-bottom: 20px;
+            }
+            p {
+                font-size: 0.83rem;
+                line-height: 1.5rem;
+            }
+        }
+    }
+    .service-content:last-of-type {
+        margin-bottom: 0;
+    }
+}
