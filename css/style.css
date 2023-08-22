@@ -387,6 +387,26 @@ body {
   background-color: var(--color-bg-line);
 }
 
+.c-slide .swiper-pagination-bullets {
+  position: static;
+  margin-top: 13px;
+  text-align: right;
+}
+.c-slide .swiper-pagination-bullet {
+  width: 8px !important;
+  height: 8px !important;
+  margin: 0 0 0 8px !important;
+}
+.c-slide .swiper-pagination-bullet-active {
+  background: var(--color-title) !important;
+}
+.c-slide .swiper-pagination-bullet:first-child {
+  margin: 0 !important;
+}
+.c-slide .swiper-button-prev, .c-slide .swiper-button-next {
+  color: var(--color-title);
+}
+
 header {
   width: 100%;
   background-color: transparent;
