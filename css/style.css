@@ -304,6 +304,25 @@ body {
   color: var(--color-head);
   font-family: var(--font-family-head);
   font-weight: bold;
+  position: relative;
+}
+
+.c-nav li a::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: -5%;
+  width: 110%;
+  height: 1px;
+  border-radius: 0.5px;
+  background-color: var(--color-head);
+  transition: all 0.3s;
+  transform: scaleX(0);
+  transform-origin: left top;
+}
+
+.c-nav li a:hover::after {
+  transform: scaleX(1);
 }
 
 .c-scroll {
