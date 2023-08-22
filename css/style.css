@@ -223,6 +223,7 @@ progress {
   --color-bg-button-right: #250D65;
   --color-copyright: #A798B7;
   --color-bg-footer: #120E19;
+  --color-border: #707070;
 }
 
 .container {
@@ -414,6 +415,18 @@ body {
 }
 .c-slide .swiper-button-prev, .c-slide .swiper-button-next {
   color: var(--color-title);
+}
+
+.c-page-top-button {
+  display: block;
+  width: 50px;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  padding: 11.5px 0;
+  border-radius: 50%;
+  color: var(--color-title);
+  background-color: var(--color-head);
+  border: 1px solid var(--color-border);
 }
 
 header {
@@ -679,6 +692,7 @@ footer {
 footer .container {
   width: calc(100% - 60px);
   padding: 60px 0;
+  position: relative;
 }
 footer .c-nav {
   font-size: 0.77rem;
@@ -699,6 +713,23 @@ footer p {
   font-weight: normal;
   letter-spacing: 0.05em;
   margin-top: 22px;
+}
+footer a#page_top_btn {
+  display: none;
+  right: 45px;
+  bottom: 48px;
+  position: fixed;
+  z-index: 800;
+}
+footer a#page_top_btn.fixed {
+  display: block;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
 }
 
 /*# sourceMappingURL=style.css.map */
