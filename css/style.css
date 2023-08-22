@@ -632,6 +632,7 @@ footer {
 }
 footer .container {
   width: calc(100% - 60px);
+  padding: 60px 0;
 }
 footer .c-nav {
   font-size: 0.77rem;
@@ -643,6 +644,15 @@ footer .c-nav li {
 }
 footer .c-nav li:last-of-type {
   margin-right: 0;
+}
+footer p {
+  color: var(--color-copyright);
+  font-family: var(--font-family-head);
+  font-size: 0.56rem;
+  line-height: 0.67rem;
+  font-weight: normal;
+  letter-spacing: 0.05em;
+  margin-top: 22px;
 }
 
 /*# sourceMappingURL=style.css.map */
