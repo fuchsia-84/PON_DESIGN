@@ -896,4 +896,32 @@ footer a#page_top_btn.fixed {
   margin-bottom: 0;
 }
 
+.works-contents .container {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 30px;
+  row-gap: 28px;
+  padding: 70px 0 110px;
+}
+.works-contents .works-content {
+  width: 100%;
+  text-align: center;
+}
+.works-contents .works-content img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+}
+.works-contents .works-content h1 {
+  font-family: var(--font-family-head);
+  font-size: 0.89rem;
+  line-height: 1.17rem;
+  font-weight: normal;
+  letter-spacing: 0.05em;
+  margin-top: 12px;
+}
+
 /*# sourceMappingURL=style.css.map */
