@@ -1,0 +1,44 @@
+@use "../global" as g;
+
+.news-contents {
+    .container {
+        padding-top: 60px;
+        padding-bottom: 122.2px;
+        .c-tab {
+            width: 80%;
+            margin: 0 auto;
+            a {
+                text-decoration: none;
+                color: var(--color-base);
+                cursor: pointer;
+            }
+        }
+        .news-page-button {
+            margin-top: 60px;
+            text-align: center;
+            list-style: none;
+            font-family: var(--font-family-head);
+            li {
+                padding: 0;
+                display: inline-block;
+                a {
+                    cursor: pointer;
+                    font-size: 1.11rem;
+                    line-height: 1.0em;
+                    font-weight: bold;
+                    text-decoration: none;
+                    color: var(--color-head);
+                    background: linear-gradient(-180deg, var(--color-bg-button-left), var(--color-bg-button-right));
+                    padding: 10.2px 17.5px;
+                    border-radius: 22.5px;
+                }
+                a#news-current {
+                    padding: 10.2px 18.1px;
+                    color: var(--color-title);
+                    background: #C1AFDE;
+                }
+            }
+            
+        }
+    }
+}
