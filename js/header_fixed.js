@@ -2,7 +2,7 @@ $(function() {
     var $header = $('#header');
     var $page_top_btn = $('#page_top_btn');
     var change_header_position = $("#header").outerHeight(true);
-    var change_page_top_btn_position = 800;
+    var change_page_top_btn_position = 400;
 
     // Header Fixed
     $(window).scroll(function() {
