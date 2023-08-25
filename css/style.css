@@ -557,6 +557,11 @@ body {
   padding: 0;
 }
 
+.c-map {
+  width: 100%;
+  height: auto;
+}
+
 header {
   width: 100%;
   background-color: transparent;
@@ -922,6 +927,102 @@ footer a#page_top_btn.fixed {
   font-weight: normal;
   letter-spacing: 0.05em;
   margin-top: 12px;
+}
+
+.message {
+  text-align: center;
+}
+.message .container {
+  width: 80%;
+  padding-top: 93px;
+  margin: 0 auto;
+  background-image: url(../../img/bg-circle.png);
+  background-size: contain;
+}
+.message .container .c-circle-image {
+  width: calc(100% - 140px);
+  top: 0;
+  left: 70px;
+  padding-top: 320px;
+}
+.message .container .wrapper h1 {
+  font-family: var(--font-family-head);
+  font-size: 1.78rem;
+  line-height: 2.39rem;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  color: var(--color-title);
+  margin-bottom: 19px;
+}
+.message .container .wrapper p {
+  margin-top: 32px;
+  font-size: 0.83rem;
+  line-height: 1.39rem;
+  letter-spacing: 0.05em;
+  padding-bottom: 160px;
+}
+.message .ceo {
+  width: 100%;
+  margin: 0 auto;
+  text-align: left;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  column-gap: 50px;
+}
+.message .ceo img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+}
+
+.about {
+  width: 80%;
+  padding: 133px 0 109px;
+  margin: 0 auto;
+}
+.about h1 {
+  font-family: var(--font-family-head);
+  font-size: 1.78rem;
+  line-height: 2.39rem;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  color: var(--color-title);
+  margin-bottom: 19px;
+  text-align: center;
+}
+.about dl {
+  font-size: 0.83rem;
+  line-height: 1.11rem;
+}
+.about dl :nth-child(6), .about dl :nth-child(8), .about dl :nth-child(10) {
+  font-family: var(--font-family-base);
+}
+.about dl dt {
+  width: 80%;
+  position: absolute;
+  padding: 29px 0 29px;
+  padding-left: 29px;
+  border-bottom: 1px solid #DDD;
+  font-family: var(--font-family-base);
+}
+.about dl dd {
+  padding: 29px 0 29px;
+  padding-left: 200px;
+  position: relative;
+  font-family: var(--font-family-head);
+}
+.about .c-map {
+  margin-top: 60px;
+  height: 394px;
+}
+.about .map a {
+  margin-top: 7px;
+  text-decoration: none;
+  font-size: 0.89rem;
+  line-height: 1.17rem;
+  letter-spacing: 0.05em;
+  color: var(--color-title);
 }
 
 /*# sourceMappingURL=style.css.map */

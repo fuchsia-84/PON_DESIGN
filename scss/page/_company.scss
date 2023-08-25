@@ -1,0 +1,101 @@
+@use "../global" as g;
+
+.message {
+    text-align: center;
+    .container {
+        width: 80%;
+        padding-top: 93px;
+        margin: 0 auto;
+        background-image: url(../../img/bg-circle.png);
+        background-size: contain;
+        .c-circle-image {
+            width: calc(100% - 140px);
+            top: 0;
+            left: 70px;
+            padding-top: 320px;
+        }
+        .wrapper {
+            h1 {
+                font-family: var(--font-family-head);
+                font-size: 1.78rem;
+                line-height: 2.39rem;
+                font-weight: bold;
+                letter-spacing: 0.05em;
+                color: var(--color-title);
+                margin-bottom: 19px;
+            }
+            p {
+                margin-top: 32px;
+                font-size: 0.83rem;
+                line-height: 1.39rem;
+                letter-spacing: 0.05em;
+                padding-bottom: 160px;
+            }
+        }
+    }
+    .ceo {
+        width: 100%;
+        margin: 0 auto;
+        text-align: left;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 50px;
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+}
+.about {
+    width: 80%;
+    padding: 133px 0 109px;
+    margin: 0 auto;
+    h1 {
+        font-family: var(--font-family-head);
+        font-size: 1.78rem;
+        line-height: 2.39rem;
+        font-weight: bold;
+        letter-spacing: 0.05em;
+        color: var(--color-title);
+        margin-bottom: 19px;
+        text-align: center;
+    }
+    dl {
+        font-size: 0.83rem;
+        line-height: 1.11rem;
+        :nth-child(6), :nth-child(8), :nth-child(10) {
+            font-family: var(--font-family-base);
+        }
+        dt {
+            width: 80%;
+            position: absolute;
+            padding: 29px 0 29px;
+            padding-left: 29px;
+            border-bottom: 1px solid #DDD;
+            font-family: var(--font-family-base);
+            
+        }
+        dd {
+            padding: 29px 0 29px;
+            padding-left: 200px;
+            position: relative;
+            font-family: var(--font-family-head);
+        }
+    }
+    .c-map {
+        margin-top: 60px;
+        height: 394px;
+    }
+    .map {
+        a {
+            margin-top: 7px;
+            text-decoration: none;
+            font-size: 0.89rem;
+            line-height: 1.17rem;
+            letter-spacing: 0.05em;
+            color: var(--color-title);
+        }
+    }
+}
