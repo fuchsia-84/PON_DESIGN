@@ -9,10 +9,10 @@
         background-image: url(../../img/bg-circle.png);
         background-size: contain;
         .c-circle-image {
+            padding-top: 0;
             width: calc(100% - 140px);
-            top: 0;
+            top: 320px;
             left: 70px;
-            padding-top: 320px;
         }
         .wrapper {
             h1 {

@@ -940,10 +940,10 @@ footer a#page_top_btn.fixed {
   background-size: contain;
 }
 .message .container .c-circle-image {
+  padding-top: 0;
   width: calc(100% - 140px);
-  top: 0;
+  top: 320px;
   left: 70px;
-  padding-top: 320px;
 }
 .message .container .wrapper h1 {
   font-family: var(--font-family-head);
