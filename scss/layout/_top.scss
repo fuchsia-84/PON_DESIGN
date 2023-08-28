@@ -1,4 +1,5 @@
 @use "../global" as g;
+@use "../foundation/mixin" as m;
 
 .top {
     display: flex;
@@ -32,5 +33,23 @@
         border: 1px solid var(--color-head);
         background: none;
         background-color: transparent;
+    }
+}
+@include m.mq(pc) {
+    .top {
+        text-align: left;
+        .container {
+            width: calc(100% - 40px);
+        }
+        h1 {
+            font-size: 2.22rem;
+            line-height: 1.1em;
+            margin-bottom: 17px;
+        }
+        p {
+            font-size: 0.89rem;
+            line-height: 1.39rem;
+            letter-spacing: 0.1em;
+        }
     }
 }

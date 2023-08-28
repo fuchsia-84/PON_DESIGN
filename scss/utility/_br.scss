@@ -1,3 +1,10 @@
+@use "../foundation/mixin" as m;
+
 .br_sp {
     display: none;
+}
+@include m.mq(pc) {
+    .br_sp {
+        display: block;
+    }
 }

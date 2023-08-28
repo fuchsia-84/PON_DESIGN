@@ -286,6 +286,11 @@ body {
   display: none;
 }
 
+@media screen and (max-width: 1025px) {
+  .br_sp {
+    display: block;
+  }
+}
 .u-bg-contact {
   background-color: var(--color-bg-section);
 }
@@ -754,6 +759,24 @@ header.fixed .header_logo {
   background-color: transparent;
 }
 
+@media screen and (max-width: 1025px) {
+  .top {
+    text-align: left;
+  }
+  .top .container {
+    width: calc(100% - 40px);
+  }
+  .top h1 {
+    font-size: 2.22rem;
+    line-height: 1.1em;
+    margin-bottom: 17px;
+  }
+  .top p {
+    font-size: 0.89rem;
+    line-height: 1.39rem;
+    letter-spacing: 0.1em;
+  }
+}
 .news {
   background-color: var(--color-bg-section);
   font-family: var(--font-family-head);
