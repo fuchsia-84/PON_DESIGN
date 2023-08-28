@@ -1,4 +1,5 @@
 @use "../global" as g;
+@use "../foundation/mixin" as m;
 
 .service {
     text-align: center;
@@ -12,5 +13,18 @@
         grid-template-columns: repeat(3, 1fr);
         column-gap: 30px;
         margin: 30px auto;
+    }
+}
+
+@include m.mq(pc) {
+    .service {
+        .container {
+            padding: 35px 0 58px;
+        }
+        .wrapper {
+            display: block;
+            width: calc(100% - 40px);
+            margin: 0 auto 58px;
+        }
     }
 }

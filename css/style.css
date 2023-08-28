@@ -514,7 +514,9 @@ body {
 .c-item h1 {
   text-align: center;
   font-size: 1rem;
-  margin-bottom: 15px;
+  line-height: 1.33rem;
+  letter-spacing: 0.05em;
+  margin-bottom: 17px;
 }
 .c-item p {
   text-align: left;
@@ -523,6 +525,25 @@ body {
   letter-spacing: 0.05em;
 }
 
+@media screen and (max-width: 1025px) {
+  .c-item {
+    margin-bottom: 40px;
+  }
+  .c-item :last-of-type {
+    margin-bottom: 0;
+  }
+  .c-item img {
+    height: 210px;
+    margin-bottom: 12px;
+  }
+  .c-item h1 {
+    margin-bottom: 10px;
+  }
+  .c-item p {
+    font-size: 0.78rem;
+    line-height: 1.39rem;
+  }
+}
 .c-circle-image {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -869,6 +890,16 @@ header.fixed .header_logo {
   margin: 30px auto;
 }
 
+@media screen and (max-width: 1025px) {
+  .service .container {
+    padding: 35px 0 58px;
+  }
+  .service .wrapper {
+    display: block;
+    width: calc(100% - 40px);
+    margin: 0 auto 58px;
+  }
+}
 .works .container {
   background-color: var(--color-bg-section);
   padding: 60px 0 81px;
