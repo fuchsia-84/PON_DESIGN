@@ -1,0 +1,100 @@
+@use "../global" as g;
+
+.contact-contents {
+    padding: 67px 0 70px;
+    color: var(--color-section);
+    h1 {
+        text-align: center;
+        font-weight: 300;
+        font-size: 0.89rem;
+        line-height: 1.17rem;
+        letter-spacing: 0.05em;
+        margin-bottom: 38px;
+    }
+    .container {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+        background-color: var(--color-bg-contact);
+        padding: 90px 0;
+        span {
+            display: inline-block;
+            font-size: 0.67rem;
+            line-height: 0.89rem;
+            margin-left: 14px;
+        }
+        .required::after {
+            content: "*必須";
+            color: var(--color-form-required);
+        }
+        form p {
+            display: block;
+            font-size: 0.89rem;
+            line-height: 1.17rem;
+            letter-spacing: 0.05em;
+            margin-left: 90px;
+            margin-bottom: 27px;
+            input {
+                width: 300px;
+                height: 40px;
+                border: 1px solid var(--color-form-border);
+                background-color: var(--color-head);
+                border-radius: 6px;
+                margin-top: 8px;
+                padding-left: 11px;
+            }
+        }
+        p#p_radio {
+            height: auto;
+            input {
+                width: auto;
+                height: auto;
+                border-radius: 0;
+                margin-top: 13px;
+            }
+            label {
+                margin-right: 55px;
+                input {
+                    margin-right: 3px;
+                }
+                :last-of-type {
+                    margin-right: 0;
+                }
+            }
+        }
+        p#p_textarea {
+            textarea {
+                width: 600px;
+                height: 255px;
+                border-radius: 6px;
+                margin-top: 8px;
+                border: 1px solid var(--color-form-border);
+                padding-left: 11px;
+                background-color: var(--color-head);
+            }
+        }
+        p#p_list {
+            height: auto;
+            select {
+                cursor: pointer;
+                width: 300px;
+                height: 40px;
+                margin-top: 8px;
+                border-radius: 6px;
+                border: 1px solid var(--color-form-border);
+                padding-left: 29px;
+                background-color: var(--color-head);
+                appearance: none; /* 標準のスタイルを無効にする */
+                option {
+                    font-size: 0.78rem;
+                    line-height: 1.0rem;
+                    letter-spacing: 0.05em;
+                    color: var(--color-form-placeholder);
+                }
+            }
+        }
+        p#p_submit {
+            text-align: center;
+        }
+    }
+}
