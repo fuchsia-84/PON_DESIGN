@@ -1332,7 +1332,7 @@ footer a#page_top_btn.fixed {
   margin-right: 10px;
 }
 .article-contents .article-top ul :nth-of-type(2) {
-  font-size: 0, 67rem;
+  font-size: 0.67rem;
   line-height: 1em;
   letter-spacing: 0.05em;
   font-weight: bold;
@@ -1343,6 +1343,9 @@ footer a#page_top_btn.fixed {
 }
 .article-contents .article-top img {
   width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
 }
 .article-contents .article-top p {
   margin-top: 30px;
@@ -1434,6 +1437,79 @@ footer a#page_top_btn.fixed {
   top: 13px;
 }
 
+@media screen and (max-width: 1025px) {
+  .article-contents {
+    padding: 40px 0;
+    width: calc(100% - 40px);
+  }
+  .article-contents .article-top {
+    padding-bottom: 58px;
+  }
+  .article-contents .article-top h1 {
+    font-size: 1.22rem;
+    line-height: 1.78rem;
+    margin-bottom: 52px;
+  }
+  .article-contents .article-top ul {
+    letter-spacing: 0.18em;
+    margin-bottom: 17px;
+  }
+  .article-contents .article-top ul li {
+    margin-right: 20.6px;
+  }
+  .article-contents .article-top ul li :nth-of-type(2) {
+    font-size: 0.61rem;
+    line-height: 0.83rem;
+    background-color: var(--color-bg-category);
+    padding: 4px 20px;
+    border-radius: 50px;
+    margin-right: 0;
+  }
+  .article-contents .article-top p {
+    font-size: 0.78rem;
+    line-height: 1.33rem;
+  }
+  .article-contents .article-detail .detail h1 {
+    font-size: 1rem;
+    line-height: 1.33rem;
+    letter-spacing: 0.018em;
+    margin-bottom: 17px;
+  }
+  .article-contents .article-detail .detail h1 span {
+    height: 18px;
+    margin-right: 14px;
+  }
+  .article-contents .article-detail .detail h2 {
+    font-size: 0.89rem;
+    line-height: 1.17rem;
+    letter-spacing: 0.018rem;
+  }
+  .article-contents .sns-buttons {
+    margin-top: 40px;
+  }
+  .article-contents .article-links a {
+    font-size: 0.67rem;
+    line-height: 1rem;
+  }
+  .article-contents .article-links a#news-all-link {
+    font-size: 0.78rem;
+    line-height: 1.06rem;
+  }
+  .article-contents .article-links ul {
+    padding: 15px;
+  }
+  .article-contents .article-links ul li {
+    width: 100%;
+    text-align: center;
+  }
+  .article-contents .article-links ul li a {
+    padding: 32px 0;
+  }
+  .article-contents .article-links ul li:nth-of-type(1):after {
+    height: 83px;
+    top: 15px;
+  }
+}
 .service-contents {
   padding: 67px 0 111px;
 }

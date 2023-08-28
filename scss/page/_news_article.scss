@@ -1,4 +1,5 @@
 @use "../global" as g;
+@use "../foundation/mixin" as m;
 
 .article-contents {
     width: 60%;
@@ -13,7 +14,7 @@
             line-height: 2.56rem;
             letter-spacing: 0.05em;
             font-weight: normal;
-            margin-bottom: 10px;;
+            margin-bottom: 10px;
         }
         ul {
             list-style: none;
@@ -26,7 +27,7 @@
                 margin-right: 10px;
             }
             :nth-of-type(2) {
-                font-size: 0,67rem;
+                font-size: 0.67rem;
                 line-height: 1.0em;
                 letter-spacing: 0.05em;
                 font-weight: bold;
@@ -38,6 +39,9 @@
         }
         img {
             width: 100%;
+            height: auto;
+            object-fit: cover;
+            object-position: center;
         }
         p {
             margin-top: 30px;
@@ -130,6 +134,86 @@
                 position: absolute;
                 left: calc(50% - 0.5px);
                 top: 13px;
+            }
+        }
+    }
+}
+
+@include m.mq(pc) {
+    .article-contents {
+        padding: 40px 0;
+        width: calc(100% - 40px);
+        .article-top {
+            padding-bottom: 58px;
+            h1 {
+                font-size: 1.22rem;
+                line-height: 1.78rem;
+                margin-bottom: 52px;
+            }
+            ul {
+                letter-spacing: 0.18em;
+                margin-bottom: 17px;
+                li {
+                    margin-right: 20.6px;
+                    :nth-of-type(2) {
+                        font-size: 0.61rem;
+                        line-height: 0.83rem;
+                        background-color: var(--color-bg-category);
+                        padding: 4px 20px;
+                        border-radius: 50px;
+                        margin-right: 0;
+                    }
+                }
+            }
+            p {
+                font-size: 0.78rem;
+                line-height: 1.33rem;
+            }
+        }
+        .article-detail {
+            .detail {
+                h1 {
+                    font-size: 1.0rem;
+                    line-height: 1.33rem;
+                    letter-spacing: 0.018em;
+                    margin-bottom: 17px;
+                    span {
+                        height: 18px;
+                        margin-right: 14px;
+                    }
+                }
+                h2 {
+                    font-size: 0.89rem;
+                    line-height: 1.17rem;
+                    letter-spacing: 0.018rem;
+                }
+            }
+        }
+        .sns-buttons {
+            margin-top: 40px;
+        }
+        .article-links {
+            a {
+                font-size: 0.67rem;
+                line-height: 1.0rem;
+            }
+            a#news-all-link {
+                font-size: 0.78rem;
+                line-height: 1.06rem;
+            }
+            ul {
+                padding: 15px;
+                li {
+                    width: 100%;
+                    text-align: center;
+                    a {
+                        padding: 32px 0;
+                    }
+                }
+                li:nth-of-type(1):after {
+                    height: 83px;
+                    top: 15px;
+                }
             }
         }
     }
