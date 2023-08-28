@@ -1122,9 +1122,20 @@ header.fixed .header_logo {
   font-family: var(--font-family-base);
   font-size: 0.83rem;
   line-height: 1.78rem;
+  letter-spacing: 0.05em;
   margin: 30px auto 48px;
 }
 
+@media screen and (max-width: 1025px) {
+  .contact .container {
+    padding: 60px 0;
+  }
+  .contact .wrapper p {
+    font-size: 0.78rem;
+    line-height: 1.22rem;
+    margin: 26px auto 46px;
+  }
+}
 footer {
   background-color: var(--color-bg-footer);
   text-align: center;
