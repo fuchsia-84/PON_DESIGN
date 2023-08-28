@@ -1,6 +1,7 @@
 @use "../global" as g;
 
 .contact {
+    background-color: var(--color-bg-contact);
     .container {
         width: 100%;
         margin: 0 auto;

@@ -294,10 +294,6 @@ body {
     display: block;
   }
 }
-.u-bg-contact {
-  background-color: var(--color-bg-contact);
-}
-
 .c-button {
   padding: 18px 70px;
   color: var(--color-head);
@@ -1079,6 +1075,9 @@ header.fixed .header_logo {
   object-fit: cover;
 }
 
+.contact {
+  background-color: var(--color-bg-contact);
+}
 .contact .container {
   width: 100%;
   margin: 0 auto;
