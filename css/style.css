@@ -946,6 +946,41 @@ header.fixed .header_logo {
   margin: 30px 0 48px;
 }
 
+@media screen and (max-width: 1025px) {
+  .works .container {
+    padding: 0;
+  }
+  .works .container .works-bg {
+    display: block;
+    width: calc(100% + 40px);
+    height: 424px; /*  To Do: fix hight and top by script */
+    top: 115px;
+    right: 0;
+  }
+  .works .wrapper {
+    display: block;
+    width: calc(100% - 40px);
+  }
+  .works .wrapper .c-works-item {
+    display: block;
+    margin: 0 -20px 0;
+    width: calc(100% + 40px);
+    padding-right: 0;
+    padding: 40px 0 78px;
+  }
+  .works .wrapper .c-works-item .c-title {
+    margin-top: 40px;
+  }
+  .works .wrapper .c-works-item p#works-item {
+    font-family: var(--font-family-base);
+    font-size: 0.78rem;
+    line-height: 1.38rem;
+    margin: 0 auto 43px;
+  }
+  .works .wrapper .c-slide {
+    max-width: 100%;
+  }
+}
 .company {
   background-color: var(--color-bg-section);
   text-align: center;
