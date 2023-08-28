@@ -571,6 +571,11 @@ body {
   margin-right: 15%;
 }
 
+@media screen and (max-width: 1025px) {
+  .c-circle-image {
+    display: none;
+  }
+}
 .c-line-title {
   font-size: 2.22rem;
   line-height: 0.8em;
@@ -585,6 +590,18 @@ body {
   background-color: var(--color-bg-line);
 }
 
+@media screen and (max-width: 1025px) {
+  .c-line-title {
+    display: inline;
+    padding: 0 30px;
+    font-size: 1.78rem;
+    line-height: 2.67rem;
+    background: linear-gradient(transparent 75%, var(--color-bg-line) 0%);
+  }
+  .c-line-title span {
+    display: none;
+  }
+}
 .c-slide .swiper-pagination-bullets {
   position: static;
   margin-top: 13px;
@@ -1013,6 +1030,22 @@ header.fixed .header_logo {
   margin: 30px auto 40px;
 }
 
+@media screen and (max-width: 1025px) {
+  .company .c-button {
+    position: static;
+  }
+  .company .container {
+    width: calc(100% - 40px);
+    position: static;
+  }
+  .company .wrapper {
+    width: 100%;
+    padding: 40px 0 96px;
+  }
+  .company .wrapper p {
+    margin: 39px auto 43px;
+  }
+}
 .recruit {
   background-color: var(--color-bg-section);
 }

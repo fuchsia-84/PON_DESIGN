@@ -1,4 +1,5 @@
 @use "../global" as g;
+@use "../foundation/mixin" as m;
 
 .company {
     background-color: var(--color-bg-section);
@@ -29,5 +30,25 @@
     }
     .c-line-title {
         margin: 30px auto 40px;
+    }
+}
+
+@include m.mq(pc) {
+    .company {
+        .c-button {
+            position: static;
+        }
+        .container {
+            width: calc(100% - 40px);
+            position: static;
+        }
+        .wrapper {
+            width: 100%;
+            padding: 40px 0 96px;
+
+            p {
+                margin: 39px auto 43px;
+            }
+        }
     }
 }

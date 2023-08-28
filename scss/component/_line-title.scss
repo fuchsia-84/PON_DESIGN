@@ -1,4 +1,5 @@
 @use "../global" as g;
+@use "../foundation/mixin" as m;
 
 .c-line-title {
     font-size: 2.22rem;
@@ -11,5 +12,18 @@
         width: 666px;
         height: 12px;
         background-color: var(--color-bg-line);
+    }
+}
+
+@include m.mq(pc) {
+    .c-line-title {
+        display: inline;
+        padding: 0 30px;
+        font-size: 1.78rem;
+        line-height: 2.67rem;
+        background: linear-gradient(transparent 75%, var(--color-bg-line) 0%);
+        span {
+            display: none;
+        }
     }
 }
