@@ -1153,6 +1153,9 @@ footer .c-nav {
 footer .c-nav li {
   margin-right: 20px;
 }
+footer .c-nav li:first-of-type {
+  display: none;
+}
 footer .c-nav li:last-of-type {
   margin-right: 0;
 }
@@ -1190,12 +1193,15 @@ footer a#page_top_btn.fixed {
   footer .container .c-nav {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(4, max-content);
+    grid-template-columns: repeat(4, max-content); /* To Do : fix item width */
     grid-template-rows: 1fr 1fr;
     column-gap: 20px;
     row-gap: 20px;
     font-size: 0.66rem;
     line-height: 0.83rem;
+  }
+  footer .container .c-nav :nth-child(1) {
+    display: block;
   }
   footer .container .c-nav li {
     text-align: left;

@@ -17,6 +17,9 @@ footer {
     .c-nav li {
         margin-right: 20px;
     }
+    .c-nav li:first-of-type {
+        display: none;
+    }
     .c-nav li:last-of-type {
         margin-right: 0;
     }
@@ -56,12 +59,15 @@ footer {
             .c-nav {
                 width: 100%;
                 display: grid;
-                grid-template-columns: repeat(4, max-content);
+                grid-template-columns: repeat(4, max-content); /* To Do : fix item width */
                 grid-template-rows: 1fr 1fr;
                 column-gap: 20px;
                 row-gap: 20px;
                 font-size: 0.66rem;
                 line-height: 0.83rem;
+                :nth-child(1) {
+                    display: block;
+                }
                 li {
                     text-align: left;
                     margin: 0;
