@@ -1546,6 +1546,35 @@ footer a#page_top_btn.fixed {
   margin-bottom: 0;
 }
 
+@media screen and (max-width: 1025px) {
+  .service-contents {
+    padding: 40px 0 80px;
+  }
+  .service-contents .container {
+    width: calc(100% - 40px);
+  }
+  .service-contents .service-content {
+    grid-template-columns: 1fr;
+  }
+  .service-contents .service-content div {
+    padding-left: 0;
+    padding-top: 18px;
+  }
+  .service-contents .service-content div h1 {
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.33rem;
+    margin-bottom: 15px;
+  }
+  .service-contents .service-content div p {
+    font-size: 0.78rem;
+    line-height: 1.33rem;
+    margin-bottom: 69px;
+  }
+  .service-contents .service-content div p :last-of-type {
+    margin-bottom: 0;
+  }
+}
 .works-contents .container {
   width: 80%;
   margin: 0 auto;
