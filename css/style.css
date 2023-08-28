@@ -777,6 +777,12 @@ header.fixed .header_logo {
   header .c-nav li :last-of-type {
     margin: 0 auto;
   }
+  header.fixed .c-nav {
+    padding: 0;
+  }
+  header.fixed .header_logo {
+    margin-top: 5px;
+  }
   .header_logo {
     margin: 0;
     display: block;

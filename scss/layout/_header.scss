@@ -89,6 +89,15 @@ header.fixed {
             }
         }
     }
+    header.fixed {
+        .c-nav {
+            padding: 0;
+        }
+        .header_logo {
+            margin-top: 5px;
+        }
+
+    }
     .header_logo {
         margin: 0;
         display: block;
