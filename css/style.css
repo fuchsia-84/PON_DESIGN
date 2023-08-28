@@ -1593,6 +1593,7 @@ footer a#page_top_btn.fixed {
   height: auto;
   object-fit: cover;
   object-position: center;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
 }
 .works-contents .works-content h1 {
   font-family: var(--font-family-head);
@@ -1603,6 +1604,17 @@ footer a#page_top_btn.fixed {
   margin-top: 12px;
 }
 
+@media screen and (max-width: 1025px) {
+  .works-contents .container {
+    padding: 40px 0 80px;
+    width: calc(100% - 40px);
+    grid-template-columns: 1fr;
+    row-gap: 40px;
+  }
+  .works-contents .works-content h1 {
+    margin-top: 13.4px;
+  }
+}
 .message {
   text-align: center;
 }
