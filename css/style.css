@@ -212,7 +212,9 @@ progress {
 :root {
   --color-head: #FFFFFF;
   --color-section: #333333;
-  --color-bg-section: #E8E8E8;
+  --color-bg-section: #FFFFFF;
+  --color-bg-category: #E8E8E8;
+  --color-bg-breadcrumb: #E8E8E8;
   --color-bg-works: #F0F0F0;
   --color-bg-recruit: #F7F7F7;
   --color-bg-contact: #F7F7F7;
@@ -253,6 +255,7 @@ html {
 
 body {
   font-family: var(--font-family-base);
+  background-color: var(--color-bg-base);
 }
 
 /*fadeIn*/
@@ -292,7 +295,7 @@ body {
   }
 }
 .u-bg-contact {
-  background-color: var(--color-bg-section);
+  background-color: var(--color-bg-contact);
 }
 
 .c-button {
@@ -617,7 +620,7 @@ body {
 
 .c-breadcrumb {
   width: 100%;
-  background-color: var(--color-bg-section);
+  background-color: var(--color-bg-breadcrumb);
   padding: 15px 0;
   color: var(--color-title);
 }
@@ -714,7 +717,6 @@ header.fixed .header_logo {
   }
   header .container {
     display: block;
-    justify-content: start;
     width: 100%;
     padding: 0;
     position: relative;
@@ -1114,7 +1116,7 @@ footer a#page_top_btn.fixed {
   line-height: 1em;
   letter-spacing: 0.05em;
   font-weight: bold;
-  background-color: var(--color-bg-section);
+  background-color: var(--color-bg-category);
   padding: 10px 20px;
   border-radius: 50px;
   margin-right: 0;
