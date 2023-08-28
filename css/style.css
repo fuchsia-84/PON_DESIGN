@@ -1183,6 +1183,32 @@ footer a#page_top_btn.fixed {
   animation-fill-mode: forwards;
 }
 
+@media screen and (max-width: 1025px) {
+  footer .container {
+    width: calc(100% - 40px);
+  }
+  footer .container .c-nav {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, max-content);
+    grid-template-rows: 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
+    font-size: 0.66rem;
+    line-height: 0.83rem;
+  }
+  footer .container .c-nav li {
+    text-align: left;
+    margin: 0;
+  }
+  footer .container p {
+    margin-top: 30px;
+  }
+  footer .container a#page_top_btn {
+    bottom: 20px;
+    right: 20px;
+  }
+}
 .news-contents .container {
   padding-top: 60px;
   padding-bottom: 122.2px;

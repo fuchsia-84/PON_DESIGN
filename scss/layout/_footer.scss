@@ -45,6 +45,35 @@ footer {
         $delay: 0s,
         $iteration-count: 1,
         $direction: normal,
-    );
+        );
+    }
+}
+
+@include m.mq(pc) {
+    footer {
+        .container {
+            width: calc(100% - 40px);
+            .c-nav {
+                width: 100%;
+                display: grid;
+                grid-template-columns: repeat(4, max-content);
+                grid-template-rows: 1fr 1fr;
+                column-gap: 20px;
+                row-gap: 20px;
+                font-size: 0.66rem;
+                line-height: 0.83rem;
+                li {
+                    text-align: left;
+                    margin: 0;
+                }
+            }
+            p {
+                margin-top: 30px;
+            }
+            a#page_top_btn {
+                bottom: 20px;
+                right: 20px;
+            }
+        }
     }
 }
