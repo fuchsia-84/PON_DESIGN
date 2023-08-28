@@ -222,6 +222,8 @@ progress {
   --color-bg-line: #F5F534;
   --color-bg-header: transparent;
   --color-bg-header-fixed: #21054D;
+  --color-bg-header-nav-top: #7633A4;
+  --color-bg-header-nav-bottom: #250D65;
   --color-bg-button-left: #7633A4;
   --color-bg-button-right: #250D65;
   --color-copyright: #A798B7;
@@ -323,6 +325,7 @@ body {
     border-radius: 1px;
     position: absolute;
     z-index: 1011;
+    left: 6px;
   }
   .c-toggle :nth-child(1) {
     top: 14px;
@@ -708,6 +711,7 @@ header .c-toggle {
 header .c-nav {
   font-size: 0.77rem;
   line-height: 1.07em;
+  letter-spacing: 0.05em;
   padding: 34px 0;
 }
 header .c-nav li {
@@ -760,28 +764,54 @@ header.fixed .header_logo {
     top: 10px;
     right: 20px;
   }
+  header .c-toggle span {
+    transition: 0.35s ease-in-out;
+  }
   header .c-nav {
     display: none; /*To Do: fix for sp */
+    flex-wrap: wrap;
     width: 100%;
     height: 100vh;
-    background: linear-gradient(-180deg, var(--color-bg-button-left), var(--color-bg-button-right));
+    background: linear-gradient(-180deg, var(--color-bg-header-nav-top), var(--color-bg-header-nav-bottom));
     text-align: center;
     position: absolute;
     z-index: 1000;
+    padding: calc(50vh - (6em + 100px)) 0 0;
+    font-size: 0.83rem;
+    line-height: 1.06rem;
   }
   header .c-nav li {
     display: block;
-    width: 80%;
-    margin: 0 auto;
+    width: 50%;
+    min-width: 80px;
+    margin: 0 auto 20px;
   }
   header .c-nav li :last-of-type {
-    margin: 0 auto;
+    margin: 0 auto 0;
   }
   header.fixed .c-nav {
     padding: 0;
   }
   header.fixed .header_logo {
     margin-top: 5px;
+  }
+  header.open .c-toggle {
+    top: 22px;
+  }
+  header.open .c-toggle :nth-child(1) {
+    top: 22px;
+    transform: rotate(315deg);
+  }
+  header.open .c-toggle :nth-child(2) {
+    width: 0;
+    left: 50%;
+  }
+  header.open .c-toggle :nth-child(3) {
+    top: 22px;
+    transform: rotate(-315deg);
+  }
+  header.open .c-nav {
+    padding: calc(50vh - (6em + 100px)) 0 0;
   }
   .header_logo {
     margin: 0;

@@ -19,6 +19,7 @@ header {
     .c-nav {
         font-size: 0.77rem;
         line-height: 1.07em;
+        letter-spacing: 0.05em;
         padding: 34px 0;
         li {
             margin-right: 25px;
@@ -70,21 +71,30 @@ header.fixed {
             display: block;
             top: 10px;
             right: 20px;
+            span {
+                transition: .35s ease-in-out;
+            }
         }
         .c-nav {
             display: none; /*To Do: fix for sp */
+            flex-wrap: wrap;
             width: 100%;
             height: 100vh;
-            background: linear-gradient(-180deg, var(--color-bg-button-left), var(--color-bg-button-right));
+            background: linear-gradient(-180deg, var(--color-bg-header-nav-top), var(--color-bg-header-nav-bottom));
             text-align: center;
             position: absolute;
             z-index: 1000;
+            padding: calc(50vh - (6.0em + 100px)) 0 0;
+
+            font-size: 0.83rem;
+            line-height: 1.06rem;
             li {
                 display: block;
-                width :80%;
-                margin: 0 auto;
+                width: 50%;
+                min-width: 80px;
+                margin: 0 auto 20px;
                 :last-of-type {
-                    margin: 0 auto;
+                    margin: 0 auto 0;
                 }
             }
         }
@@ -96,7 +106,26 @@ header.fixed {
         .header_logo {
             margin-top: 5px;
         }
-
+    }
+    header.open {
+        .c-toggle {
+            top: 22px;
+            :nth-child(1) {
+                top: 22px;
+                transform: rotate(315deg);
+            }
+            :nth-child(2) {
+                width: 0;
+                left: 50%;
+            }
+            :nth-child(3) {
+                top: 22px;
+                transform: rotate(-315deg);
+            }
+        }
+        .c-nav {
+            padding: calc(50vh - (6.0em + 100px)) 0 0;
+        }
     }
     .header_logo {
         margin: 0;
