@@ -1,5 +1,8 @@
 @use "../global" as g;
+@use "../foundation/mixin" as m;
 
+
+/* To Do: add background color to dt */
 .c-tab {
     font-family: var(--font-family-head);
     dt {
@@ -23,5 +26,21 @@
         letter-spacing: 0.05em;
         font-weight: 300;
         padding-left: 174px;
+    }
+}
+
+@include m.mq(pc) {
+    .c-tab {
+        :last-child {
+            margin-bottom: 0;
+        }
+        dt {
+            float: none;
+            margin-bottom: 10px;
+        }
+        dd {
+            padding-left: 0;
+            margin-bottom: 35px;
+        }
     }
 }

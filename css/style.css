@@ -447,9 +447,22 @@ body {
   font-size: 0.72rem;
   line-height: 1.78rem;
   letter-spacing: 0.05em;
-  margin-left: 5px;
 }
 
+@media screen and (max-width: 1025px) {
+  .c-title {
+    margin-bottom: 30px;
+  }
+  .c-title h1 {
+    font-size: 1.67rem;
+    line-height: 2.06rem;
+    letter-spacing: 0.05em;
+  }
+  .c-title p {
+    line-height: 0.94rem;
+  }
+}
+/* To Do: add background color to dt */
 .c-tab {
   font-family: var(--font-family-head);
 }
@@ -476,6 +489,19 @@ body {
   padding-left: 174px;
 }
 
+@media screen and (max-width: 1025px) {
+  .c-tab :last-child {
+    margin-bottom: 0;
+  }
+  .c-tab dt {
+    float: none;
+    margin-bottom: 10px;
+  }
+  .c-tab dd {
+    padding-left: 0;
+    margin-bottom: 35px;
+  }
+}
 .c-item img {
   width: 100%;
   height: 220px;
@@ -797,11 +823,35 @@ header.fixed .header_logo {
   vertical-align: top;
   width: 20%;
 }
+.news .wrapper .c-title p {
+  margin-left: 5px;
+}
 .news .wrapper .c-tab {
   display: inline-block;
   width: 80%;
 }
 
+@media screen and (max-width: 1025px) {
+  .news .container {
+    width: calc(100% - 40px);
+    padding: 40px 0;
+  }
+  .news .wrapper {
+    display: block;
+    width: 100%;
+  }
+  .news .wrapper .c-title {
+    display: block;
+    text-align: center;
+    margin: 0 auto 30px;
+  }
+  .news .wrapper .c-title p {
+    margin-left: 0;
+  }
+  .news .wrapper .c-tab {
+    display: block;
+  }
+}
 .service {
   text-align: center;
   background-color: var(--color-bg-section);

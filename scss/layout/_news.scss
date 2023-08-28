@@ -1,4 +1,5 @@
 @use "../global" as g;
+@use "../foundation/mixin" as m; 
 
 .news {
     background-color: var(--color-bg-section);
@@ -18,10 +19,36 @@
             text-align: left;
             vertical-align: top;
             width: 20%;
+            p {
+                margin-left: 5px;
+            }
         }
         .c-tab {
             display: inline-block;
             width: 80%;
+        }
+    }
+}
+@include m.mq(pc) {
+    .news {
+        .container {
+            width: calc(100% - 40px);
+            padding: 40px 0;
+        }
+        .wrapper {
+            display: block;
+            width: 100%;
+            .c-title {
+                display: block;
+                text-align: center;
+                margin: 0 auto 30px;
+                p {
+                    margin-left: 0;
+                }
+            }
+            .c-tab {
+                display: block;
+            }
         }
     }
 }
