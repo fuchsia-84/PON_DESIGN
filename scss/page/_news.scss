@@ -1,4 +1,5 @@
 @use "../global" as g;
+@use "../foundation/mixin" as m;
 
 .news-contents {
     .container {
@@ -39,6 +40,23 @@
                 }
             }
             
+        }
+    }
+}
+
+@include m.mq(pc) {
+    .news-contents {
+        .container {
+            padding-top: 40px;
+            padding-bottom: 90px;
+            .c-tab {
+                dd {
+                    margin-bottom: 28px;
+                }
+            }
+            .news-page-button {
+                margin-top: 50px;
+            }
         }
     }
 }

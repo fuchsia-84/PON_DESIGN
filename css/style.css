@@ -1291,6 +1291,18 @@ footer a#page_top_btn.fixed {
   background: #C1AFDE;
 }
 
+@media screen and (max-width: 1025px) {
+  .news-contents .container {
+    padding-top: 40px;
+    padding-bottom: 90px;
+  }
+  .news-contents .container .c-tab dd {
+    margin-bottom: 28px;
+  }
+  .news-contents .container .news-page-button {
+    margin-top: 50px;
+  }
+}
 .article-contents {
   width: 60%;
   margin: 0 auto;
