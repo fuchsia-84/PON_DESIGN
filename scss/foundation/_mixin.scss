@@ -43,3 +43,14 @@
         opacity: 0;
     }
 }
+
+/* break point */
+$breakpoint: (
+    pc: 'screen and (max-width: 1025px)'
+);
+
+@mixin mq($bp) {
+    @media #{map-get($breakpoint, $bp)} {
+        @content;
+    }
+}
