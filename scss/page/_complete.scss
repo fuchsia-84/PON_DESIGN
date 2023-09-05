@@ -1,0 +1,32 @@
+@use "../global" as g;
+@use "../foundation/mixin" as m;
+
+.complete-contents {
+    padding: 67px 0 70px;
+    color: var(--color-section);
+    text-align: center;
+    font-weight: 300;
+    font-size: 0.89rem;
+    line-height: 1.17rem;
+    letter-spacing: 0.05em;
+    font-weight: 300;
+    h1 {
+        margin-bottom: 38px;
+    }
+    a {
+        text-align: center;
+        cursor: pointer;
+        color: var(--color-title);
+    }
+}
+
+@include m.mq(pc) {
+    .complete-contents {
+        padding-top: 37px;
+        h1 {
+            font-size: 0.78rem;
+            line-height: 1.17rem;
+            margin-bottom: 28px;
+        }
+    }
+}

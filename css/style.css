@@ -2089,5 +2089,34 @@ footer a#page_top_btn.fixed {
     margin: 0;
   }
 }
+.complete-contents {
+  padding: 67px 0 70px;
+  color: var(--color-section);
+  text-align: center;
+  font-weight: 300;
+  font-size: 0.89rem;
+  line-height: 1.17rem;
+  letter-spacing: 0.05em;
+  font-weight: 300;
+}
+.complete-contents h1 {
+  margin-bottom: 38px;
+}
+.complete-contents a {
+  text-align: center;
+  cursor: pointer;
+  color: var(--color-title);
+}
+
+@media screen and (max-width: 1025px) {
+  .complete-contents {
+    padding-top: 37px;
+  }
+  .complete-contents h1 {
+    font-size: 0.78rem;
+    line-height: 1.17rem;
+    margin-bottom: 28px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
