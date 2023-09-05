@@ -60,8 +60,7 @@
         <section class="contact-contents">
             <h1>Webサイトの制作のご依頼やお見積りなど、<br class="br_sp">お気軽にご相談ください。</h1>
             <div class="container">
-                <!-- To Do : edit tag for using Netlify -->
-                <form name="contact_form" method="POST" autocomplete="off">
+                <form name="contact_form" netlify method="POST" autocomplete="off" data-netlify="true">
                     <p id="p_radio">
                         <label for="type">お問い合わせ種別<span class="required"></span><br/></label>
                         <label><input type="radio" id="type" name="type" value="お仕事のご依頼・ご相談" required checked>お仕事のご依頼・ご相談</label>
@@ -83,7 +82,7 @@
                         <input type="tel" name="tel" pattern="[\d\-]*" maxlength="11">
                     </p>
                     <p id="p_textarea">
-                      <label for="question">お問い合わせ内容<span class="required"></span><br/></label><textarea name="question" id="question" required></textarea>
+                        <label for="question">お問い合わせ内容<span class="required"></span><br/></label><textarea name="question" id="question" required></textarea>
                     </p>
                     <p id="p_list">
                         <label for="where">PON DESIGNをどちらでお知りになりましたか？<span class="required"></span><br/></label>
@@ -97,7 +96,7 @@
                             </select>
                     </p>
                     <p id="p_submit">
-                      <button class="c-button" type="submit">送信する</button>
+                        <button class="c-button" type="submit">送信する</button>
                     </p>
                 </form>
             </div>
