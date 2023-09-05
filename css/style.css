@@ -1790,6 +1790,7 @@ footer a#page_top_btn.fixed {
   text-align: left;
   font-size: 0.83rem;
   line-height: 1.11rem;
+  letter-spacing: 0.05em;
   margin-bottom: 68px;
 }
 .recruit-contents .recruit-content .job dl dt {
@@ -1831,6 +1832,81 @@ footer a#page_top_btn.fixed {
   margin: 0 auto;
 }
 
+@media screen and (max-width: 1025px) {
+  .recruit-contents {
+    padding-bottom: 80px;
+  }
+  .recruit-contents .recruit-top {
+    padding-top: 40px;
+  }
+  .recruit-contents .recruit-top .recruit-top-title .recruit-top-title h1 {
+    font-size: 2.67rem;
+    line-height: 3.11rem;
+  }
+  .recruit-contents .recruit-top .recruit-top-title .recruit-top-title p {
+    font-size: 1rem;
+    line-height: 1.33rem;
+    letter-spacing: 0.018em;
+    margin-top: 12px;
+  }
+  .recruit-contents .recruit-top .recruit-top-title p {
+    margin-top: 19px;
+    font-size: 0.83rem;
+    line-height: 1.5rem;
+  }
+  .recruit-contents .recruit-top img {
+    height: 290px;
+    object-position: 0 -40px;
+    transform: skew(0, -5deg);
+  }
+  .recruit-contents .recruit-content {
+    margin-top: 35px;
+  }
+  .recruit-contents .recruit-content h1 {
+    font-size: 1.33rem;
+    line-height: 1.78rem;
+    margin-bottom: 27px;
+  }
+  .recruit-contents .recruit-content .job {
+    padding: 28px 0;
+    width: calc(100% - 40px);
+    margin-bottom: 75px;
+  }
+  .recruit-contents .recruit-content .job h1 {
+    font-size: 0.89rem;
+    line-height: 1.17rem;
+  }
+  .recruit-contents .recruit-content .job dl {
+    width: calc(100% - 40px);
+    grid-template-columns: 1fr;
+    font-size: 0.78rem;
+    line-height: 1.06rem;
+    margin-bottom: 40px;
+  }
+  .recruit-contents .recruit-content .job dl dt {
+    width: 100%;
+    height: auto;
+    padding-top: 17px;
+    border-bottom: 0;
+    padding-left: 0;
+  }
+  .recruit-contents .recruit-content .job dl dd {
+    font-size: 0.83rem;
+    line-height: 1.11rem;
+    padding-top: 5px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid var(--color-tab-border);
+    font-family: var(--font-family-head);
+  }
+  .recruit-contents .recruit-content .job dl :nth-child(9) {
+    padding-bottom: 0;
+  }
+  .recruit-contents .recruit-content .video {
+    display: block;
+    width: calc(100% - 40px);
+    height: 703px;
+  }
+}
 .contact-contents {
   padding: 67px 0 70px;
   color: var(--color-section);
