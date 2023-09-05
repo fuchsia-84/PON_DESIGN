@@ -2004,4 +2004,77 @@ footer a#page_top_btn.fixed {
   text-align: center;
 }
 
+@media screen and (max-width: 1025px) {
+  .contact-contents {
+    padding-top: 37px;
+  }
+  .contact-contents h1 {
+    font-size: 0.78rem;
+    line-height: 1.17rem;
+    margin-bottom: 28px;
+  }
+  .contact-contents .container {
+    width: calc(100% - 40px);
+    padding: 27px 0;
+  }
+  .contact-contents .container span {
+    margin-left: 20px;
+  }
+  .contact-contents .container form p {
+    display: block;
+    font-size: 0.83rem;
+    line-height: 1.11rem;
+    margin-left: 30px;
+    margin-bottom: 28px;
+  }
+  .contact-contents .container form p input {
+    width: calc(100% - 30px);
+    border-radius: 0;
+    margin-top: 8px;
+    padding-left: 0px;
+    font-size: 0.72rem;
+    line-height: 0.94rem;
+  }
+  .contact-contents .container p#p_radio {
+    height: auto;
+  }
+  .contact-contents .container p#p_radio input {
+    width: auto;
+    height: auto;
+    border-radius: 0;
+    margin-top: 11px;
+  }
+  .contact-contents .container p#p_radio label {
+    display: block;
+    margin-right: 0;
+  }
+  .contact-contents .container p#p_radio label input {
+    margin-right: 10px;
+  }
+  .contact-contents .container p#p_textarea textarea {
+    width: calc(100% - 30px);
+    border-radius: 0;
+  }
+  .contact-contents .container p#p_list {
+    height: auto;
+    margin-bottom: 50px;
+  }
+  .contact-contents .container p#p_list select {
+    cursor: pointer;
+    width: calc(100% - 30px);
+    border-radius: 0;
+    padding-left: 11px;
+  }
+  .contact-contents .container p#p_list select option {
+    font-size: 0.78rem;
+    line-height: 1rem;
+    letter-spacing: 0.05em;
+    color: var(--color-form-placeholder);
+  }
+  .contact-contents .container p#p_submit {
+    text-align: center;
+    margin: 0;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

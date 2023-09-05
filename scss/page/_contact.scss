@@ -1,4 +1,5 @@
 @use "../global" as g;
+@use "../foundation/mixin" as m;
 
 .contact-contents {
     padding: 67px 0 70px;
@@ -95,6 +96,81 @@
         }
         p#p_submit {
             text-align: center;
+        }
+    }
+}
+
+@include m.mq(pc) {
+    .contact-contents {
+        padding-top: 37px;
+        h1 {
+            font-size: 0.78rem;
+            line-height: 1.17rem;
+            margin-bottom: 28px;
+        }
+        .container {
+            width: calc(100% - 40px);
+            padding: 27px 0;
+            span {
+                margin-left: 20px;
+            }
+            form p {
+                display: block;
+                font-size: 0.83rem;
+                line-height: 1.11rem;
+                margin-left: 30px;
+                margin-bottom: 28px;
+                input {
+                    width: calc(100% - 30px);
+                    border-radius: 0;
+                    margin-top: 8px;
+                    padding-left: 0px;
+                    font-size: 0.72rem;
+                    line-height: 0.94rem;
+                }
+            }
+            p#p_radio {
+                height: auto;
+                input {
+                    width: auto;
+                    height: auto;
+                    border-radius: 0;
+                    margin-top: 11px;
+                }
+                label {
+                    display: block;
+                    margin-right: 0;
+                    input {
+                        margin-right: 10px;
+                    }
+                }
+            }
+            p#p_textarea {
+                textarea {
+                    width: calc(100% - 30px);
+                    border-radius: 0;
+                }
+            }
+            p#p_list {
+                height: auto;
+                margin-bottom: 50px;
+                select {
+                    cursor: pointer;
+                    width: calc(100% - 30px);
+                    border-radius: 0;
+                    padding-left: 11px;
+                    option {
+                        font-size: 0.78rem;
+                        line-height: 1.0rem;
+                        letter-spacing: 0.05em;
+                        color: var(--color-form-placeholder);
+                    }
+                }
+            }
+            p#p_submit {
+                text-align: center;
+                margin: 0;
+            }
         }
     }
 }
