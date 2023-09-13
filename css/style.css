@@ -464,7 +464,6 @@ body {
     line-height: 0.94rem;
   }
 }
-/* To Do: add background color to dt */
 .c-tab {
   font-family: var(--font-family-head);
 }
@@ -475,12 +474,17 @@ body {
   float: left;
 }
 .c-tab dt span {
-  width: 82px;
+  vertical-align: top;
   text-align: center;
   display: inline-block;
   font-size: 0.67rem;
   letter-spacing: 0.05em;
   font-weight: bold;
+  padding: 3px 16px;
+  margin: 0 20px;
+  border-radius: 50px;
+  background-color: var(--color-bg-category);
+  vertical-align: bottom;
 }
 .c-tab dd {
   font-family: var(--font-family-base);
@@ -489,6 +493,7 @@ body {
   letter-spacing: 0.05em;
   font-weight: 300;
   padding-left: 174px;
+  margin-bottom: 18px;
 }
 
 @media screen and (max-width: 1025px) {
@@ -498,6 +503,10 @@ body {
   .c-tab dt {
     float: none;
     margin-bottom: 10px;
+  }
+  .c-tab dt span {
+    padding: 3px 21px;
+    margin: 0 15px;
   }
   .c-tab dd {
     padding-left: 0;
