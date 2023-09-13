@@ -1014,7 +1014,6 @@ header.fixed .header_logo {
   .works .container .works-bg {
     display: block;
     width: calc(100% + 40px);
-    height: 424px; /*  To Do: fix hight and top by script */
     top: 115px;
     right: 0;
   }
