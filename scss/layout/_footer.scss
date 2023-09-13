@@ -59,7 +59,7 @@ footer {
             .c-nav {
                 width: 100%;
                 display: grid;
-                grid-template-columns: repeat(4, max-content); /* To Do : fix item width */
+                grid-template-columns: repeat(4, max-content);
                 grid-template-rows: 1fr 1fr;
                 column-gap: 20px;
                 row-gap: 20px;
