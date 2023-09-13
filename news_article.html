@@ -81,9 +81,14 @@
                     <p>テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります</p>
                 </div>
             </div>
-            <div class="sns-buttons">
-                <!-- To Do: add SNS icons -->
-            </div>
+            <ul class="sns-buttons">
+                <li><div class="fb-like" data-href="https://pon-design-fuchsia.netlify.app/news_article" data-width="" data-layout="button_count" data-action="" data-size="large" data-share="true"></div></li>
+                <li><a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></li>
+                <div class="spacer"></div>
+                <li><a href="https://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="basic-label" data-hatena-bookmark-lang="ja" data-hatena-bookmark-height="30" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/v4/public/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script></li>
+                <li><div class="line-it-button" data-lang="ja" data-type="share-b" data-env="REAL" data-url="https://pon-design-fuchsia.netlify.app/news_article" data-color="default" data-size="small" data-count="false" data-ver="3" style="display: none;"></div>
+                    <script src="https://www.line-website.com/social-plugins/js/thirdparty/loader.min.js" async="async" defer="defer"></script></li>
+            </ul>
             <div class="article-links">
                 <ul>
                     <li><a href="#">Web Conference様のサイトを制作いたしました</a></li>
@@ -127,7 +132,9 @@
 
         <!-- JQuery -->
         <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-
+        <!-- Face Book -->
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v18.0&appId=901212990796098&autoLogAppEvents=1" nonce="u6Y0RGl1"></script>
         <!-- Script -->
         <script src="./js/header_fixed.js"></script>
         <script src="./js/nav_toggle.js"></script>

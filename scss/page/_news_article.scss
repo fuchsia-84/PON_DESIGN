@@ -86,10 +86,18 @@
         }
     }
     .sns-buttons {
-        width: 100%;
-        height: 30px;
+        display: flex;
+        flex-wrap: nowrap;
         margin-top: 60px;
-        /* To Do: add SNS icons */
+        margin-bottom: 40px;
+        list-style: none;
+        li {
+            height: 30px;
+            margin-right: 5px;
+        }
+        :last-child {
+            margin-right: 0;
+        }
     }
     .article-links {
         a {
@@ -192,6 +200,11 @@
         }
         .sns-buttons {
             margin-top: 40px;
+            flex-wrap: wrap;
+            .spacer {
+                width: 100%;
+            }
+            
         }
         .article-links {
             a {
