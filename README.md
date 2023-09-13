@@ -19,8 +19,7 @@ Web上で配布された制作課題を元に、<u>**架空Web制作会社のホ
 
 ## 成果物
   
-画像を更新予定
-
+<img width="796" alt="PON_DESIGN_icatch" src="https://github.com/fuchsia-84/PON_DESIGN/assets/46129202/edf5f32e-e846-43af-a659-47605392c648">
 
 - <u>**レスポンシブ対応**</u>: PC版・タブレット版・SP版と、画面幅に対応してレイアウトが変化します。
 
