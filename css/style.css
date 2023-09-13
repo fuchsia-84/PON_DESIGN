@@ -1023,6 +1023,7 @@ header.fixed .header_logo {
   .works .container .works-bg {
     display: block;
     width: calc(100% + 40px);
+    max-height: 354px;
     top: 115px;
     right: 0;
   }
