@@ -1455,6 +1455,9 @@ footer a#page_top_btn.fixed {
   margin: 17px auto 0;
   letter-spacing: 0.08em;
 }
+.article-contents .article-links a#news-all-link span {
+  text-transform: uppercase;
+}
 .article-contents .article-links ul {
   list-style: none;
   display: grid;

@@ -112,6 +112,9 @@
             display: block;
             margin: 17px auto 0;
             letter-spacing: 0.08em;
+            span {
+                text-transform: uppercase;
+            }
         }
         ul {
             list-style: none;
