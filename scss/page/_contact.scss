@@ -76,6 +76,10 @@
         }
         p#p_list {
             height: auto;
+            span {
+                text-transform: uppercase;
+                margin-left: 0;
+            }
             select {
                 cursor: pointer;
                 width: 300px;

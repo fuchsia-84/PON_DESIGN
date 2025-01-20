@@ -2041,6 +2041,10 @@ footer a#page_top_btn.fixed {
 .contact-contents .container p#p_list {
   height: auto;
 }
+.contact-contents .container p#p_list span {
+  text-transform: uppercase;
+  margin-left: 0;
+}
 .contact-contents .container p#p_list select {
   cursor: pointer;
   width: 300px;
