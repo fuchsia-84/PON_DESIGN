@@ -82,6 +82,9 @@
             padding-left: 200px;
             position: relative;
             font-family: var(--font-family-head);
+            span {
+                text-transform: uppercase;
+            }
         }
     }
     .c-map {
