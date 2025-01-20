@@ -303,6 +303,7 @@ body {
   text-align: center;
   border-radius: 100px;
   background: linear-gradient(90deg, var(--color-bg-button-left), var(--color-bg-button-right));
+  text-transform: uppercase;
 }
 
 .c-toggle {
@@ -414,6 +415,7 @@ body {
   letter-spacing: 0.2em;
   writing-mode: vertical-rl;
   z-index: 701;
+  text-transform: uppercase;
 }
 .c-scroll ::after {
   content: "";
@@ -444,6 +446,7 @@ body {
   line-height: 1.78rem;
   letter-spacing: 0.02em;
   margin-bottom: 2px;
+  text-transform: uppercase;
 }
 .c-title p {
   font-family: var(--font-family-base);
@@ -866,6 +869,7 @@ header.fixed .header_logo {
   letter-spacing: 0.05em;
   font-weight: bold;
   margin-bottom: 15px;
+  text-transform: uppercase;
 }
 .top p {
   font-family: var(--font-family-base);
@@ -1229,6 +1233,7 @@ footer p {
   font-weight: normal;
   letter-spacing: 0.05em;
   margin-top: 22px;
+  text-transform: uppercase;
 }
 footer a#page_top_btn {
   display: none;
