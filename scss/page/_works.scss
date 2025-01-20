@@ -28,6 +28,9 @@
             font-weight: normal;
             letter-spacing: 0.05em;
             margin-top: 12px;
+            span {
+                text-transform: uppercase;
+            }
         }
     }
 }

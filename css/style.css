@@ -1661,6 +1661,9 @@ footer a#page_top_btn.fixed {
   letter-spacing: 0.05em;
   margin-top: 12px;
 }
+.works-contents .works-content h1 span {
+  text-transform: uppercase;
+}
 
 @media screen and (max-width: 1025px) {
   .works-contents .container {
