@@ -376,6 +376,7 @@ body {
   font-family: var(--font-family-head);
   font-weight: bold;
   position: relative;
+  text-transform: uppercase;
 }
 
 .c-nav li a::after {
